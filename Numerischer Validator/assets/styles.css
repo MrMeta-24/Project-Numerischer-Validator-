@@ -1,0 +1,122 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #586a7e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 15px;
+      padding-left: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #333;
+      background-color: #fafafa;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4e88f4;
+      outline: none;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+
+    button {
+      flex: 1;
+      padding: 12px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    #check-btn {
+      background-color: #4e88f4;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #check-btn:hover {
+      background-color: #357acb;
+      transform: translateY(-2px);
+    }
+
+    #clear-btn {
+      background-color: #ff4e4e;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #clear-btn:hover {
+      background-color: #ff3a3a;
+      transform: translateY(-2px);
+    }
+
+    #results-div {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .valid {
+      color: #4e88f4;
+    }
+
+    .invalid {
+      color: #ff4e4e;
+    }
